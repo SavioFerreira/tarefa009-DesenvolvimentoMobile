@@ -21,10 +21,6 @@ export const Subtitle = styled.Text`
   margin-bottom: 32px;
 `;
 
-export const Account = styled.View`
-  width: 100%;
-  margin-top: 32px;
-  justify-content: space-around;
-  align-items: center;
+export const ButtonContainer = styled.View`
   flex-direction: row;
 `;

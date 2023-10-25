@@ -7,10 +7,11 @@ type TextInputProps = {
 export const TextInput = styled.TextInput<TextInputProps>`
   max-height: 60px;
   height: 60px;
-  background-color:${({ theme }) => theme.COLORS.GRAY50};
+  background-color:${({ theme }) => theme.COLORS.GRAY800};
   border-radius: 5px;
   padding-left: 12px;
   margin-bottom: 12px;
+
 
   ${({ size }) => size === 'small' && css`
     width: 60px;
