@@ -1,9 +1,10 @@
 import React from 'react';
-
+import { BackHandler, Alert } from 'react-native';
 import { Container, ButtonContainer, Title, Subtitle } from './styles';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
 import { ButtonClose } from '../../components/ButtonClose';
+import CloseApp from '../../components/closeApp';
 
 export function Main() {
     return (
@@ -34,8 +35,8 @@ export function Main() {
             />
 
             <ButtonContainer>
-                <Button title="Entrar" onPress={() => { }} />
-                <ButtonClose title="Fechar" onPress={() => { }} />
+                <Button title="Salvar" onPress={() => { }} />
+                <ButtonClose title="Fechar" onPress={() => { CloseApp() }} />
             </ButtonContainer>
 
         </Container>
